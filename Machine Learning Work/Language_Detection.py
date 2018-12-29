@@ -1,6 +1,6 @@
 """
 Author: Steven Yang
-This file process data to be feed into the network
+This file processes data to be feed into the network
 """
 import unicodedata
 import string
