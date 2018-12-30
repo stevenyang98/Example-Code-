@@ -79,8 +79,7 @@ del dutch3
 French = french3
 del french3
 
-print("shut up")
-print(len(Spanish), len(French), len(Dutch))
+# print(len(Spanish), len(French), len(Dutch))
 # Part 2: Produce list of all letters in our 'universe'
 
 
