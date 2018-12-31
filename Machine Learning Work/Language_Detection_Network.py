@@ -37,7 +37,6 @@ print(scaled_Y.shape)
 train_X, test_X, train_Y, test_Y = train_test_split(scaled_X, scaled_Y, test_size=.2, random_state=42)
 
 
-print("model time")
 # DNN
 model = Sequential()
 model.add(Dense(500, input_dim=126, kernel_initializer="glorot_uniform", activation="relu"))
