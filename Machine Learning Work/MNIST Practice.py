@@ -3,10 +3,10 @@ from keras.models import Sequential
 from keras.layers import Dense, Conv2D, Dropout, Flatten, MaxPooling2D
 (x_train, y_train), (x_test, y_test) = tf.keras.datasets.mnist.load_data()
 
-print(x_train[0])
-print(len(x_train[0]))
-print(x_train[0][0])
-print(len(x_train[0][0]))
+# print(x_train[0])
+# print(len(x_train[0]))
+# print(x_train[0][0])
+# print(len(x_train[0][0]))
 
 #code from an online tutorial of convolution neural nets: https://towardsdatascience.com/
 #make the data workable with Keras
@@ -25,15 +25,15 @@ print(x_train[0])
 
 
 #learning to use the keras library and tensorflow
-# model = Sequential()
-# model.add(Conv2D(28, kernel_size=(3,3), input_shape=input))
-# model.add(MaxPooling2D(pool_size=(2,2)))
-# model.add(Flatten())
-# model.add(Dense(128, activation=tf.nn.relu))
-# model.add(Dropout(0.2))
-# model.add(Dense(10, activation=tf.nn.softmax))
-#
-# model.compile(optimizer="adam", loss="sparse_categorical_crossentropy",metrics=["accuracy"])
-#model.fit(x=x_train,y=y_train,epochs=20)
-#model.evaluate(x_test, y_test)
+model = Sequential()
+model.add(Conv2D(28, kernel_size=(3,3), input_shape=input))
+model.add(MaxPooling2D(pool_size=(2,2)))
+model.add(Flatten())
+model.add(Dense(128, activation=tf.nn.relu))
+model.add(Dropout(0.2))
+model.add(Dense(10, activation=tf.nn.softmax))
+
+model.compile(optimizer="adam", loss="sparse_categorical_crossentropy",metrics=["accuracy"])
+model.fit(x=x_train,y=y_train,epochs=20)
+model.evaluate(x_test, y_test)
 
